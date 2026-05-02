@@ -1,210 +1,214 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>Neopangea — Maroc · Europe</title>
+  <title>Neopangea — Maroc · Europe</title>
+  <meta name="description" content="Analyses opérationnelles sur les dynamiques Maroc–Europe." />
 
-<style>
-:root {
-  --blue: #1f3a5f;
-  --blue-soft: #2f4f7a;
-  --bg: #f6f4ef;
-  --text: #18202a;
-  --muted: #566170;
-}
+  <style>
+    :root {
+      --blue: #1f3a5f;
+      --blue-soft: #2f4f7a;
+      --bg: #f6f4ef;
+      --text: #18202a;
+      --muted: #566170;
+      --border: #e4ded4;
+    }
 
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  color: var(--text);
-  background: var(--bg);
-  line-height: 1.45; /* más compacto */
-}
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.5;
+    }
 
-.container {
-  max-width: 1000px;
-  margin: auto;
-  padding: 18px 18px; /* menos padding */
-}
+    .container {
+      max-width: 1080px;
+      margin: auto;
+      padding: 24px 22px;
+    }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 28px; /* antes 40+ */
-}
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 40px;
+      border-bottom: 1px solid rgba(31, 58, 95, 0.18);
+      padding-bottom: 14px;
+    }
 
-.brand {
-  font-size: 20px;
-  font-weight: 700;
-  color: var(--blue);
-}
+    .brand {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.4px;
+      color: var(--blue);
+    }
 
-.nav {
-  font-size: 13px;
-  color: var(--muted);
-}
+    .nav {
+      font-size: 14px;
+      color: var(--blue-soft);
+      font-weight: 600;
+    }
 
-.hero {
-  max-width: 780px;
-  padding: 12px 0 22px; /* mucho más compacto */
-}
+    .hero {
+      max-width: 850px;
+      padding: 20px 0 35px;
+    }
 
-.eyebrow {
-  font-size: 12px;
-  letter-spacing: 1.2px;
-  color: var(--blue-soft);
-  margin-bottom: 10px;
-}
+    .eyebrow {
+      text-transform: uppercase;
+      font-size: 13px;
+      letter-spacing: 1.4px;
+      color: var(--blue-soft);
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
 
-h1 {
-  font-size: 42px; /* un poco más pequeño */
-  margin: 0 0 12px;
-  color: var(--blue);
-}
+    h1 {
+      font-size: 50px;
+      line-height: 1.05;
+      letter-spacing: -1.8px;
+      margin: 0 0 18px;
+      color: var(--blue);
+    }
 
-h2 {
-  font-size: 24px;
-  margin: 0 0 10px;
-  color: var(--blue);
-}
+    h2 {
+      font-size: 28px;
+      letter-spacing: -0.5px;
+      margin: 0 0 14px;
+      color: var(--blue);
+    }
 
-h3 {
-  font-size: 17px;
-  margin: 0 0 6px;
-}
+    h3 {
+      margin: 0 0 8px;
+      font-size: 19px;
+      color: var(--blue);
+    }
 
-p {
-  margin: 0 0 8px; /* clave: reduce aire */
-}
+    p {
+      margin-top: 0;
+    }
 
-.lead {
-  font-size: 17px;
-  margin-bottom: 8px;
-}
+    .lead {
+      font-size: 19px;
+      color: #3d4652;
+      max-width: 780px;
+      margin-bottom: 12px;
+    }
 
-.credibility {
-  font-size: 14px;
-  margin-bottom: 12px;
-}
+    .credibility {
+      font-size: 16px;
+      color: var(--blue-soft);
+      max-width: 760px;
+      margin-bottom: 18px;
+      font-weight: 600;
+    }
 
-.cta {
-  padding: 9px 14px;
-  font-size: 14px;
-}
+    .cta {
+      display: inline-block;
+      background: var(--blue);
+      color: white;
+      text-decoration: none;
+      padding: 11px 18px;
+      border-radius: 6px;
+      font-weight: 700;
+    }
 
-section {
-  margin: 22px 0; /* antes 36-60 */
-}
+    .cta:hover {
+      background: var(--blue-soft);
+    }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px; /* menos gap */
-}
+    section {
+      margin: 36px 0;
+    }
 
-.card {
-  padding: 14px; /* antes 18-22 */
-}
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
 
-.highlight {
-  padding: 14px;
-}
+    .card {
+      background: white;
+      border: 1px solid var(--border);
+      border-top: 3px solid var(--blue);
+      border-radius: 12px;
+      padding: 18px;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.035);
+    }
 
-.split {
-  gap: 14px;
-}
+    .muted {
+      color: var(--muted);
+    }
 
-ul {
-  margin: 6px 0;
-}
+    .highlight {
+      background: #fff;
+      border-left: 4px solid var(--blue);
+      padding: 18px;
+      border-radius: 10px;
+      border-top: 1px solid var(--border);
+      border-right: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
 
-li {
-  margin-bottom: 4px;
-}
+    .split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+    }
 
-.contact {
-  padding: 16px;
-}
+    ul {
+      padding-left: 20px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
 
-footer {
-  margin-top: 28px;
-  padding-top: 12px;
-  font-size: 12px;
-}
+    li {
+      margin-bottom: 6px;
+    }
 
-@media (max-width: 800px) {
-  h1 { font-size: 30px; }
-  .grid, .split { grid-template-columns: 1fr; }
-}
-</style>
-</head>
+    .contact {
+      background: var(--blue);
+      color: white;
+      padding: 22px;
+      border-radius: 14px;
+    }
 
-<body>
-<div class="container">
+    .contact h2 {
+      color: white;
+    }
 
-<header>
-  <div class="brand">Neopangea</div>
-  <div class="nav">MA</div>
-</header>
+    .contact a {
+      color: white;
+      font-weight: 700;
+    }
 
-<main>
+    footer {
+      margin-top: 42px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(31, 58, 95, 0.22);
+      font-size: 13px;
+      color: #666;
+    }
 
-<div class="hero">
-  <div class="eyebrow">Analyse et appui à la décision</div>
+    footer p {
+      margin-bottom: 10px;
+    }
 
-  <h1>Comprendre les dynamiques Maroc–Europe pour mieux décider.</h1>
+    footer strong {
+      color: var(--blue);
+    }
 
-  <p class="lead">
-    Neopangea propose des analyses courtes et directement exploitables pour les institutions et entreprises opérant entre le Maroc et l’Europe.
-  </p>
+    @media (max-width: 800px) {
+      .container {
+        padding: 20px 18px;
+      }
 
-  <p class="credibility">
-    Une approche fondée sur les politiques publiques, l’innovation et l’économie internationale.
-  </p>
+      header {
+        margin-bottom: 26px;
+      }
 
-  <a class="cta" href="mailto:ainadviser@gmail.com">Contact</a>
-</div>
-
-<section class="highlight">
-  <h2>Pour qui</h2>
-  <p class="muted">Institutions, agences et entreprises actives entre le Maroc et l’Europe.</p>
-</section>
-
-<section>
-  <h2>Services</h2>
-
-  <div class="grid">
-    <div class="card">
-      <h3>Notes d’analyse</h3>
-      <p class="muted">Synthèses sur les dynamiques économiques et institutionnelles.</p>
-    </div>
-
-    <div class="card">
-      <h3>Analyse des politiques</h3>
-      <p class="muted">Lecture opérationnelle des politiques marocaines et européennes.</p>
-    </div>
-
-    <div class="card">
-      <h3>Appui stratégique</h3>
-      <p class="muted">Préparation de notes et argumentaires pour la décision.</p>
-    </div>
-  </div>
-</section>
-
-<section class="contact">
-  <h2>Contact</h2>
-  <p><a href="mailto:ainadviser@gmail.com">ainadviser@gmail.com</a></p>
-</section>
-
-</main>
-
-<footer>
-  Neopangea · Maroc · Europe
-</footer>
-
-</div>
-</body>
-</html>
+      .hero {
