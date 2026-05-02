@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Neopangea</title>
+  <title>Neopangea — Maroc</title>
+
   <style>
     body {
       margin: 0;
@@ -29,7 +30,6 @@
     .brand {
       font-size: 22px;
       font-weight: 700;
-      letter-spacing: -0.4px;
     }
 
     .nav {
@@ -38,7 +38,7 @@
     }
 
     .hero {
-      max-width: 840px;
+      max-width: 850px;
       padding: 40px 0 70px;
     }
 
@@ -52,17 +52,27 @@
     }
 
     h1 {
-      font-size: 58px;
+      font-size: 54px;
       line-height: 1.05;
-      letter-spacing: -2px;
       margin: 0 0 24px;
     }
 
+    h2 {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
     .lead {
-      font-size: 21px;
+      font-size: 20px;
       color: #3d4652;
-      max-width: 760px;
-      margin-bottom: 32px;
+      margin-bottom: 18px;
+    }
+
+    .credibility {
+      font-size: 16px;
+      color: #5b4634;
+      margin-bottom: 30px;
+      font-weight: 600;
     }
 
     .cta {
@@ -70,19 +80,13 @@
       background: #18202a;
       color: white;
       text-decoration: none;
-      padding: 14px 22px;
+      padding: 12px 20px;
       border-radius: 6px;
       font-weight: 700;
     }
 
     section {
-      margin: 70px 0;
-    }
-
-    h2 {
-      font-size: 32px;
-      letter-spacing: -0.8px;
-      margin-bottom: 24px;
+      margin: 60px 0;
     }
 
     .grid {
@@ -94,25 +98,25 @@
     .card {
       background: white;
       border: 1px solid #e4ded4;
-      border-radius: 14px;
-      padding: 24px;
-      box-shadow: 0 10px 24px rgba(0,0,0,0.04);
-    }
-
-    .card h3 {
-      margin-top: 0;
-      font-size: 20px;
+      border-radius: 12px;
+      padding: 20px;
     }
 
     .muted {
       color: #566170;
     }
 
+    .highlight {
+      background: #fff;
+      border-left: 4px solid #7b4f2c;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
     .split {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 34px;
-      align-items: start;
+      gap: 30px;
     }
 
     ul {
@@ -120,46 +124,27 @@
     }
 
     li {
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
 
     .contact {
       background: #18202a;
       color: white;
-      padding: 34px;
-      border-radius: 18px;
-    }
-
-    .contact a {
-      color: white;
-      font-weight: 700;
+      padding: 30px;
+      border-radius: 14px;
     }
 
     footer {
-      margin-top: 80px;
-      padding-top: 24px;
-      border-top: 1px solid #ddd5c8;
-      color: #6a7280;
+      margin-top: 60px;
+      padding-top: 20px;
+      border-top: 1px solid #ddd;
       font-size: 14px;
+      color: #666;
     }
 
     @media (max-width: 800px) {
-      h1 {
-        font-size: 40px;
-      }
-
-      .lead {
-        font-size: 18px;
-      }
-
-      .grid,
-      .split {
-        grid-template-columns: 1fr;
-      }
-
-      header {
-        margin-bottom: 35px;
-      }
+      h1 { font-size: 36px; }
+      .grid, .split { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -169,60 +154,80 @@
 
     <header>
       <div class="brand">Neopangea</div>
-      <div class="nav">Europe · Méditerranée · Afrique</div>
+      <div class="nav">MA</div>
     </header>
 
     <main>
       <div class="hero">
         <div class="eyebrow">Intelligence stratégique</div>
-        <h1>Comprendre les dynamiques Europe–Afrique avant qu’elles ne deviennent évidentes.</h1>
+
+        <h1>Transformer l’information Maroc–Europe–Afrique en intelligence utile à la décision.</h1>
+
         <p class="lead">
-          Neopangea produit des analyses courtes, structurées et directement exploitables pour les institutions publiques,
-          les agences d’innovation, les organisations économiques et les entreprises confrontées à des décisions dans des
-          environnements euro-africains complexes.
+          Neopangea produit des analyses courtes, structurées et directement exploitables pour les institutions, les agences, les entreprises et les acteurs économiques opérant entre le Maroc, l’Europe et l’Afrique.
         </p>
+
+        <p class="credibility">
+          Une approche fondée sur l’expérience des politiques publiques européennes, de l’innovation et de l’analyse économique internationale, avec une attention particulière aux dynamiques marocaines et africaines.
+        </p>
+
         <a class="cta" href="mailto:ainadviser@gmail.com">Demander des informations</a>
       </div>
 
+      <section class="highlight">
+        <h2>Pour qui</h2>
+        <p class="muted">
+          Institutions publiques, agences d’innovation, organisations économiques, entreprises, investisseurs et structures de coopération travaillant au Maroc ou utilisant le Maroc comme plateforme vers l’Afrique.
+        </p>
+      </section>
+
       <section>
-        <h2>Ce que nous faisons</h2>
+        <h2>Services</h2>
+
         <div class="grid">
           <div class="card">
             <h3>Briefs d’intelligence stratégique</h3>
-            <p class="muted">Notes synthétiques de 3 à 5 pages sur les évolutions politiques, économiques, réglementaires et sectorielles.</p>
+            <p class="muted">Notes de 3 à 5 pages sur les évolutions politiques, économiques et sectorielles liées au Maroc.</p>
           </div>
 
           <div class="card">
             <h3>Analyse des politiques publiques et des marchés</h3>
-            <p class="muted">Lecture opérationnelle des politiques européennes, africaines et méditerranéennes.</p>
+            <p class="muted">Lecture opérationnelle des dynamiques marocaines, européennes et africaines.</p>
           </div>
 
           <div class="card">
-            <h3>Conseil stratégique et positionnement</h3>
-            <p class="muted">Appui à la préparation de notes, argumentaires, dossiers institutionnels et démarches de coopération.</p>
+            <h3>Conseil stratégique</h3>
+            <p class="muted">Appui à la décision, positionnement et préparation de dossiers institutionnels.</p>
           </div>
         </div>
       </section>
 
+      <section class="highlight">
+        <h2>Livrables</h2>
+        <p class="muted">
+          Notes de veille Maroc–Afrique, briefs sectoriels, cartographies d’acteurs, analyses de politiques publiques, dossiers institutionnels et supports de décision.
+        </p>
+      </section>
+
       <section class="split">
         <div>
-          <h2>Notre méthode</h2>
+          <h2>Méthode</h2>
           <ul>
-            <li>Surveillance ciblée de sources institutionnelles, économiques et sectorielles.</li>
-            <li>Tri, vérification et hiérarchisation de l’information utile.</li>
-            <li>Analyse contextualisée, sans jargon inutile.</li>
-            <li>Synthèse orientée vers la décision, pas vers l’accumulation documentaire.</li>
+            <li>Surveillance ciblée de sources marocaines, européennes et africaines</li>
+            <li>Tri et hiérarchisation de l’information</li>
+            <li>Analyse contextualisée</li>
+            <li>Synthèse orientée décision</li>
           </ul>
         </div>
 
         <div>
-          <h2>Domaines d’attention</h2>
+          <h2>Domaines</h2>
           <ul>
-            <li>Union européenne, Méditerranée et Afrique.</li>
-            <li>Intégration économique africaine et ZLECAf.</li>
-            <li>Innovation, industrie et autonomie stratégique.</li>
-            <li>Financements européens et politiques de développement.</li>
-            <li>Chaînes de valeur, corridors économiques et coopération régionale.</li>
+            <li>Positionnement du Maroc dans les chaînes de valeur</li>
+            <li>Industrie et innovation</li>
+            <li>Financements européens</li>
+            <li>ZLECAf et intégration africaine</li>
+            <li>Corridors économiques</li>
           </ul>
         </div>
       </section>
@@ -230,25 +235,20 @@
       <section>
         <h2>Pourquoi Neopangea</h2>
         <p class="muted">
-          Les relations Europe–Afrique sont souvent abordées de manière fragmentée : diplomatie d’un côté, commerce de l’autre,
-          développement ailleurs. Or les décisions réelles se prennent à l’intersection de ces dimensions.
-        </p>
-        <p class="muted">
-          Neopangea adopte une approche transversale : politique publique, économie internationale, innovation, géopolitique
-          et dynamiques territoriales. L’objectif est simple : transformer un volume d’information dispersée en lecture
-          stratégique utile.
+          Le Maroc occupe une position stratégique entre l’Europe et l’Afrique, mais l’information reste fragmentée. Neopangea propose une lecture intégrée, combinant politiques publiques, économie et réalités opérationnelles.
         </p>
       </section>
 
       <section class="contact">
         <h2>Contact</h2>
-        <p>Pour une demande d’information, une collaboration ou un premier échange :</p>
-        <p><a href="mailto:ainadviser@gmail.com">ainadviser@gmail.com</a></p>
+        <p>Vous souhaitez tester un premier brief ou discuter d’un besoin spécifique ?</p>
+        <p><a href="mailto:ainadviser@gmail.com" style="color:white;">ainadviser@gmail.com</a></p>
       </section>
+
     </main>
 
     <footer>
-      Neopangea · Strategic intelligence · Europe · Mediterranean · Africa
+      Neopangea · Maroc · Europe · Afrique
     </footer>
 
   </div>
