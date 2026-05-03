@@ -22,88 +22,81 @@
       font-family: Arial, Helvetica, sans-serif;
       color: var(--text);
       background: var(--bg);
-      line-height: 1.5;
+      line-height: 1.45;
     }
 
     .container {
-      max-width: 1080px;
+      max-width: 1000px;
       margin: auto;
-      padding: 24px 22px;
+      padding: 18px 18px;
     }
 
     header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 40px;
+      margin-bottom: 28px;
       border-bottom: 1px solid rgba(31, 58, 95, 0.18);
-      padding-bottom: 14px;
+      padding-bottom: 12px;
     }
 
     .brand {
-      font-size: 22px;
+      font-size: 20px;
       font-weight: 700;
-      letter-spacing: -0.4px;
       color: var(--blue);
     }
 
     .nav {
-      font-size: 14px;
+      font-size: 13px;
       color: var(--blue-soft);
       font-weight: 600;
     }
 
     .hero {
-      max-width: 850px;
-      padding: 20px 0 35px;
+      max-width: 780px;
+      padding: 12px 0 22px;
     }
 
     .eyebrow {
-      text-transform: uppercase;
-      font-size: 13px;
-      letter-spacing: 1.4px;
+      font-size: 12px;
+      letter-spacing: 1.2px;
       color: var(--blue-soft);
+      margin-bottom: 10px;
+      text-transform: uppercase;
       font-weight: 700;
-      margin-bottom: 14px;
     }
 
     h1 {
-      font-size: 50px;
-      line-height: 1.05;
-      letter-spacing: -1.8px;
-      margin: 0 0 18px;
+      font-size: 42px;
+      margin: 0 0 12px;
       color: var(--blue);
     }
 
     h2 {
-      font-size: 28px;
-      letter-spacing: -0.5px;
-      margin: 0 0 14px;
+      font-size: 24px;
+      margin: 0 0 10px;
       color: var(--blue);
     }
 
     h3 {
-      margin: 0 0 8px;
-      font-size: 19px;
+      font-size: 17px;
+      margin: 0 0 6px;
       color: var(--blue);
     }
 
     p {
-      margin-top: 0;
+      margin: 0 0 8px;
     }
 
     .lead {
-      font-size: 19px;
-      color: #3d4652;
-      max-width: 780px;
-      margin-bottom: 12px;
+      font-size: 17px;
+      margin-bottom: 8px;
     }
 
     .credibility {
-      font-size: 16px;
+      font-size: 14px;
       color: var(--blue-soft);
-      max-width: 760px;
-      margin-bottom: 18px;
+      margin-bottom: 12px;
       font-weight: 600;
     }
 
@@ -112,9 +105,10 @@
       background: var(--blue);
       color: white;
       text-decoration: none;
-      padding: 11px 18px;
+      padding: 9px 14px;
       border-radius: 6px;
       font-weight: 700;
+      font-size: 14px;
     }
 
     .cta:hover {
@@ -122,13 +116,13 @@
     }
 
     section {
-      margin: 36px 0;
+      margin: 22px 0;
     }
 
     .grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 14px;
+      gap: 10px;
     }
 
     .card {
@@ -136,8 +130,8 @@
       border: 1px solid var(--border);
       border-top: 3px solid var(--blue);
       border-radius: 12px;
-      padding: 18px;
-      box-shadow: 0 8px 18px rgba(0,0,0,0.035);
+      padding: 14px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.03);
     }
 
     .muted {
@@ -147,33 +141,30 @@
     .highlight {
       background: #fff;
       border-left: 4px solid var(--blue);
-      padding: 18px;
+      padding: 14px;
       border-radius: 10px;
-      border-top: 1px solid var(--border);
-      border-right: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
+      border: 1px solid var(--border);
     }
 
     .split {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 22px;
+      gap: 14px;
     }
 
     ul {
       padding-left: 20px;
-      margin-top: 0;
-      margin-bottom: 0;
+      margin: 6px 0;
     }
 
     li {
-      margin-bottom: 6px;
+      margin-bottom: 4px;
     }
 
     .contact {
       background: var(--blue);
       color: white;
-      padding: 22px;
+      padding: 16px;
       border-radius: 14px;
     }
 
@@ -187,15 +178,11 @@
     }
 
     footer {
-      margin-top: 42px;
-      padding-top: 18px;
-      border-top: 1px solid rgba(31, 58, 95, 0.22);
-      font-size: 13px;
+      margin-top: 28px;
+      padding-top: 12px;
+      border-top: 1px solid rgba(31, 58, 95, 0.2);
+      font-size: 12px;
       color: #666;
-    }
-
-    footer p {
-      margin-bottom: 10px;
     }
 
     footer strong {
@@ -203,166 +190,84 @@
     }
 
     @media (max-width: 800px) {
-      .container {
-        padding: 20px 18px;
-      }
-
-      header {
-        margin-bottom: 26px;
-      }
-
-      .hero {
-        padding: 12px 0 24px;
-      }
-
-      h1 {
-        font-size: 34px;
-        letter-spacing: -1px;
-      }
-
-      h2 {
-        font-size: 25px;
-      }
-
-      .lead {
-        font-size: 18px;
-      }
-
-      .grid,
-      .split {
-        grid-template-columns: 1fr;
-      }
-
-      section {
-        margin: 28px 0;
-      }
+      h1 { font-size: 30px; }
+      .grid, .split { grid-template-columns: 1fr; }
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
+<div class="container">
 
-    <header>
-      <div class="brand">Neopangea</div>
-      <div class="nav">MA</div>
-    </header>
+<header>
+  <div class="brand">Neopangea</div>
+  <div class="nav">MA</div>
+</header>
 
-    <main>
-      <div class="hero">
-        <div class="eyebrow">Analyse et appui à la décision</div>
+<main>
 
-        <h1>Comprendre les dynamiques Maroc–Europe pour mieux décider.</h1>
+<div class="hero">
+  <div class="eyebrow">Analyse et appui à la décision</div>
 
-        <p class="lead">
-          Neopangea propose des analyses courtes, structurées et directement exploitables pour les institutions,
-          agences et entreprises opérant entre le Maroc et l’Europe.
-        </p>
+  <h1>Comprendre les dynamiques Maroc–Europe pour mieux décider.</h1>
 
-        <p class="credibility">
-          Une approche fondée sur l’expérience des politiques publiques européennes, de l’innovation
-          et de l’économie internationale, avec un ancrage dans les réalités marocaines.
-        </p>
+  <p class="lead">
+    Neopangea propose des analyses courtes et directement exploitables pour les institutions et entreprises opérant entre le Maroc et l’Europe.
+  </p>
 
-        <a class="cta" href="mailto:ainadviser@gmail.com">Contact</a>
-      </div>
+  <p class="credibility">
+    Une approche fondée sur les politiques publiques, l’innovation et l’économie internationale.
+  </p>
 
-      <section class="highlight">
-        <h2>Pour qui</h2>
-        <p class="muted">
-          Institutions publiques, agences d’innovation, organisations économiques et entreprises
-          travaillant entre le Maroc et l’Europe.
-        </p>
-      </section>
+  <a class="cta" href="mailto:ainadviser@gmail.com">Demander un brief</a>
+</div>
 
-      <section>
-        <h2>Services</h2>
+<section class="highlight">
+  <h2>Pour qui</h2>
+  <p class="muted">Institutions, agences et entreprises actives entre le Maroc et l’Europe.</p>
+</section>
 
-        <div class="grid">
-          <div class="card">
-            <h3>Notes d’analyse</h3>
-            <p class="muted">
-              Documents synthétiques sur les évolutions économiques, institutionnelles et sectorielles
-              liées aux relations Maroc–Europe.
-            </p>
-          </div>
+<section>
+  <h2>Services</h2>
 
-          <div class="card">
-            <h3>Analyse des politiques et des marchés</h3>
-            <p class="muted">
-              Lecture opérationnelle des politiques marocaines et européennes, avec un focus sur l’industrie,
-              l’innovation et les financements.
-            </p>
-          </div>
+  <div class="grid">
+    <div class="card">
+      <h3>Notes d’analyse</h3>
+      <p class="muted">Synthèses sur les dynamiques économiques et institutionnelles.</p>
+    </div>
 
-          <div class="card">
-            <h3>Appui stratégique</h3>
-            <p class="muted">
-              Préparation de notes, argumentaires et dossiers pour la prise de décision et le positionnement.
-            </p>
-          </div>
-        </div>
-      </section>
+    <div class="card">
+      <h3>Analyse des politiques</h3>
+      <p class="muted">Lecture opérationnelle des politiques marocaines et européennes.</p>
+    </div>
 
-      <section class="highlight">
-        <h2>Livrables</h2>
-        <p class="muted">
-          Notes de veille, briefs sectoriels, cartographies d’acteurs, analyses de politiques publiques,
-          synthèses de contexte et dossiers institutionnels.
-        </p>
-      </section>
-
-      <section class="split">
-        <div>
-          <h2>Méthode</h2>
-          <ul>
-            <li>Veille ciblée de sources marocaines et européennes.</li>
-            <li>Tri et hiérarchisation de l’information utile.</li>
-            <li>Analyse contextualisée.</li>
-            <li>Synthèse orientée vers la décision.</li>
-          </ul>
-        </div>
-
-        <div>
-          <h2>Domaines</h2>
-          <ul>
-            <li>Industrie et innovation au Maroc.</li>
-            <li>Financements européens.</li>
-            <li>Chaînes de valeur euro-marocaines.</li>
-            <li>Politiques publiques et compétitivité.</li>
-            <li>Ouverture vers certaines dynamiques africaines.</li>
-          </ul>
-        </div>
-      </section>
-
-      <section>
-        <h2>Pourquoi Neopangea</h2>
-        <p class="muted">
-          Les relations Maroc–Europe impliquent des dimensions économiques, institutionnelles et industrielles
-          souvent traitées séparément. Neopangea propose une lecture transversale, directement orientée vers
-          l’action et la prise de décision.
-        </p>
-      </section>
-
-      <section class="contact">
-        <h2>Contact</h2>
-        <p><a href="mailto:ainadviser@gmail.com">ainadviser@gmail.com</a></p>
-      </section>
-    </main>
-
-    <footer>
-      <p>Neopangea · Maroc · Europe</p>
-
-      <p><strong>Mentions légales :</strong><br>
-      Neopangea<br>
-      Responsable : Andreu Iranzo<br>
-      Contact : ainadviser@gmail.com</p>
-
-      <p><strong>Protection des données :</strong><br>
-      Les informations transmises par email sont utilisées uniquement pour répondre aux demandes.
-      Aucun cookie ni outil de suivi n’est utilisé.</p>
-    </footer>
-
+    <div class="card">
+      <h3>Appui stratégique</h3>
+      <p class="muted">Préparation de notes et argumentaires pour la décision.</p>
+    </div>
   </div>
+</section>
+
+<section class="contact">
+  <h2>Contact</h2>
+  <p><a href="mailto:ainadviser@gmail.com">ainadviser@gmail.com</a></p>
+</section>
+
+</main>
+
+<footer>
+  Neopangea · Maroc · Europe
+
+  <p><strong>Mentions légales :</strong><br>
+  Neopangea<br>
+  Responsable : Andreu Iranzo<br>
+  Contact : ainadviser@gmail.com</p>
+
+  <p><strong>Protection des données :</strong><br>
+  Les informations transmises par email sont utilisées uniquement pour répondre aux demandes.
+  Aucun cookie ni outil de suivi n’est utilisé.</p>
+</footer>
+
+</div>
 </body>
 </html>
